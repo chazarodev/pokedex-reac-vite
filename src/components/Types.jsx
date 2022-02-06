@@ -1,3 +1,4 @@
+import './styles/types.css'
 
 const Types = ({type}) => {
 
@@ -5,11 +6,11 @@ const Types = ({type}) => {
 
     return (
         <>
-            <tr className="bg-white">
-                <td className=" text-center mx-5 p-2">
-                    <p className="text-xl font-sans capitalize">{name}</p>
-                </td>
-            </tr>
+            <div className="mb-2">
+                <div className={`text-center mx-5 p-2 ${name}`}>
+                    <p className="text-2xl font-sans capitalize font-bold">{name}</p>
+                </div>
+            </div>
         </>
     )
 }

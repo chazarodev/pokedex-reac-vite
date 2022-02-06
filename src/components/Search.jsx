@@ -28,7 +28,7 @@ const Search = ({handleSubmit}) => {
                             <div className='flex flex-wrap justify-center laptop:justify-start'>
                                 <div>
                                     <Field
-                                        className='mt-2 mx-2 p-5 block w-full rounded-l-lg border-l-4 border-borde focus:ring-1 focus:ring-borde focus:outline-none' 
+                                        className='mt-1 mx-2 movilsm:mx-0 p-5 block w-full movilsm:w-[208px] rounded-l-lg border-l-4 border-borde focus:ring-1 focus:ring-borde focus:outline-none' 
                                         type='number'
                                         placeholder='Ej. 25'
                                         name='pokemonsNumber'
@@ -37,7 +37,7 @@ const Search = ({handleSubmit}) => {
                                 <input 
                                     type="submit" 
                                     value={'GO!'}
-                                    className='mt-2 mx-2 font-bold w-3/12 p-1 rounded-r-lg bg-btn hover:bg-encabezado shadow-md cursor-pointer border-r-4 border-borde transition-all'
+                                    className='mt-1 mx-2 movilsm:mx-0  font-bold w-3/12 p-1 rounded-r-lg bg-btn hover:bg-encabezado shadow-md cursor-pointer border-r-4 border-borde transition-all'
                                 />
                             </div>
                             {errors.pokemonsNumber && (

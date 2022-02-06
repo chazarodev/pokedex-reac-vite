@@ -8,7 +8,7 @@ const Info = ({pokemon}) => {
     return (
         <>
             <section>
-                <table className="w-full table-auto mt-5 laptop:mt-0 shadow-lg border-none">
+                <table className="w-full table-auto mt-1 mx-auto shadow-lg border-none">
                     <thead className="bg-marco text-white">
                         <tr>
                             <th className="p-2 text-2xl font-sans">
@@ -28,11 +28,11 @@ const Info = ({pokemon}) => {
                                 <p className="text-xl font-sans">{id}</p>
                             </td>
                             <td className="text-center">
-                            <p className="text-xl font-sans capitalize">{name}</p>
+                            <p className="text-xl font-sans font-bold capitalize">{name}</p>
                             </td>
                             <td className="text-center">
                                 {abilities.map(abilitie => (
-                                    <p key={abilitie.ability.name} className="text-texto capitalize text-2xl">{abilitie.ability.name}</p>
+                                    <p key={abilitie.ability.name} className="text-texto capitalize text-xl">{abilitie.ability.name}</p>
                                 ))}
                             </td>
                         </tr>
@@ -40,7 +40,7 @@ const Info = ({pokemon}) => {
                 </table>
             </section>
             <section className="mt-5">
-                <table className="w-full table-auto shadow-lg bg-white mt-5 laptop:mt-0">
+                <table className="w-full mx-auto table-auto shadow-lg bg-white mt-5 laptop:mt-0">
                     <thead className="bg-marco text-left text-white">
                         <tr>
                             <th className="p-2 text-2xl font-sans mx-5">
@@ -62,23 +62,15 @@ const Info = ({pokemon}) => {
                 </table>
             </section>
             <section className="mt-5">
-                <table className="w-full laptop:w-1/3 table-auto shadow-lg bg-white laptop:mt-0">
-                    <thead className="bg-marco text-center text-white">
-                        <tr>
-                            <th className="p-2 text-2xl font-sans mx-5">
-                                <h1>Type</h1>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {types.map(type => (
-                            <Types
-                                key={type.type.name} 
-                                type={type}
-                            />
-                        ))}
-                    </tbody>
-                </table>
+                <h1 className="font-sans capitalize text-2xl font-bold text-center">Type</h1>
+                <div>
+                    {types.map(type => (
+                        <Types
+                            key={type.type.name} 
+                            type={type}
+                        />
+                    ))}
+                </div>
             </section>
         </>
     )

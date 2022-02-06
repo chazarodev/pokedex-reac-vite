@@ -1,0 +1,84 @@
+/**Back-ground Pokemon*/
+.fighting {
+    background: linear-gradient(25deg, #ff8a47, #faa26f);
+    border-radius: 10px;
+}
+.flying {
+    background: linear-gradient(to right, #2f79e7, #6e9fe7, #95b9f0);
+    color: #f3f2f2;
+    border-radius: 10px;
+}
+.poison {
+    background: linear-gradient(to right, #3a1986, #4c2c97, #5c3ca5, #07640f);
+    color: #f3f2f2;
+    border-radius: 10px;
+}
+.ground {
+    background: linear-gradient(to bottom, #ddca5b, #b6a234, #99892d, #796c23);
+    border-radius: 10px;
+}
+.rock {
+    background: linear-gradient(15deg, #494846, #727271, #adadad, #e0e0e0);
+    color: rgb(253, 213, 165);
+    border-radius: 10px;
+}
+.bug {
+    background: linear-gradient(45deg, #0d5e02, #15a303, #1bc205, #1ff103);
+    color: rgb(192, 20, 192);
+    border-radius: 10px;
+}
+.ghost {
+    background: linear-gradient(to bottom, #3e2f66, #281e42, #160f29);
+    color: #f3f2f2;
+    border-radius: 10px;
+}
+.steel {
+    background: linear-gradient(15deg, #494846, #788ebd, #95b2f1, #86a9f5);
+    border-radius: 10px;
+}
+.fire {
+    background: linear-gradient(180deg, #eaf737, #f7e437, #f59342, #f7862a, #f87307, #f76504);
+    color: #333333;
+    border-radius: 10px;
+}
+.water {
+    background: linear-gradient(45deg, #0011f5, #323ef1, #5b65f1);
+    color: #f3f2f2;
+    border-radius: 10px;
+}
+.grass {
+    background: linear-gradient(220deg, #1ff103, #2ee616, #57ec44 );
+    color: rgb(66, 66, 0);
+    border-radius: 10px;
+}
+.electric {
+    background: linear-gradient(25deg, #fcfa91, #fffc60, #fffc32, #fffb0c);
+    color: royalblue;
+    border-radius: 10px;
+}
+.psychic {
+    background: linear-gradient(25deg, #5400b4, #7c2bd8, #8440d3);
+    color: #f3f2f2;
+    border-radius: 10px;
+}
+.ice {
+    background: linear-gradient(145deg, #82b6fa, #ffffff);
+    color: #400bbd;
+    border-radius: 10px;
+}
+.dragon {
+    background: linear-gradient(145deg, #ffffff, #e03b26, #b81d08 );
+    border-radius: 10px;
+}
+.fairy {
+    background: linear-gradient(225deg, #f802e4, #cf17c0b6, #cf17c0 );
+    border-radius: 10px;
+}
+.dark {
+    background: linear-gradient(225deg, #000000, #222222, #333333 );
+    border-radius: 10px;
+}
+.normal {
+    background-color: #e49f83;
+    border-radius: 10px;
+}

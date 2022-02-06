@@ -32,17 +32,17 @@ const Start = () => {
 
     return (
         <>
-            <div className='m-5 laptop:p-5 grid laptop:grid-cols-2 gap-5'>
+            <div className='m-5 laptop:p-5 grid laptop:grid-cols-2 gap-10 container mx-auto'>
                 <div>
                     {id > 0 ? (
                         <img 
-                            className='bg-white lapto:m-5 rounded shadow-lg shadow-sombra'
+                            className='bg-white mx-auto lapto:m-5 rounded shadow-lg shadow-sombra laptop:w-[475px] movilsm:w-[250px]'
                             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`} 
                             alt="imagen pokemon" 
                         />
                     ) : (
                         <img 
-                            className='bg-white lapto:m-5 rounded shadow-lg shadow-sombra'
+                            className='bg-white lapto:m-5 rounded shadow-lg shadow-sombra laptop:w-[475px] movilsm:w-[250px] mx-auto'
                             src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png'
                             alt="imagen pokemon" 
                         />
