@@ -8,7 +8,7 @@ const Info = ({pokemon}) => {
     return (
         <>
             <section>
-                <table className="w-full table-auto mt-1 mx-auto shadow-lg border-none">
+                <table className="w-full table-auto mx-auto shadow-lg border-none">
                     <thead className="bg-marco text-white">
                         <tr>
                             <th className="p-2 text-2xl font-sans">
@@ -61,8 +61,8 @@ const Info = ({pokemon}) => {
                     </tbody>            
                 </table>
             </section>
-            <section className="mt-5">
-                <h1 className="font-sans capitalize text-2xl font-bold text-center">Type</h1>
+            <section className="my-2">
+                <h1 className="font-sans mb-2 capitalize text-2xl font-bold text-center">Type</h1>
                 <div>
                     {types.map(type => (
                         <Types

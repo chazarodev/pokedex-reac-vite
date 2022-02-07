@@ -38,7 +38,7 @@
 }
 .fire {
     background: linear-gradient(180deg, #eaf737, #f7e437, #f59342, #f7862a, #f87307, #f76504);
-    color: #333333;
+    color: #850000;
     border-radius: 10px;
 }
 .water {
@@ -68,6 +68,7 @@
 }
 .dragon {
     background: linear-gradient(145deg, #ffffff, #e03b26, #b81d08 );
+    color: rgb(184, 199, 245);
     border-radius: 10px;
 }
 .fairy {
@@ -76,6 +77,7 @@
 }
 .dark {
     background: linear-gradient(225deg, #000000, #222222, #333333 );
+    color: #dbd9d9;
     border-radius: 10px;
 }
 .normal {
