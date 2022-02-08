@@ -1,6 +1,7 @@
 /**Back-ground Pokemon*/
 .fighting {
-    background: linear-gradient(25deg, #ff8a47, #faa26f);
+    background: linear-gradient(25deg, #ff3a17, #faa26f);
+    color: #ddd9d9;
     border-radius: 10px;
 }
 .flying {
@@ -10,7 +11,7 @@
 }
 .poison {
     background: linear-gradient(to right, #3a1986, #4c2c97, #5c3ca5, #07640f);
-    color: #f3f2f2;
+    color: #1cf51c;
     border-radius: 10px;
 }
 .ground {
@@ -23,8 +24,8 @@
     border-radius: 10px;
 }
 .bug {
-    background: linear-gradient(45deg, #0d5e02, #15a303, #1bc205, #1ff103);
-    color: rgb(192, 20, 192);
+    background: linear-gradient(45deg, #107a02, #15a303, #1bc205, #1ff103);
+    color: rgb(83, 0, 94);
     border-radius: 10px;
 }
 .ghost {

@@ -1,8 +1,6 @@
-import './styles/stats.css'
 
-const Stats = ({stat}) => {
+const Stats = ({stat}) => { 
 
-    const puto = stat.base_stat
 
     return (
         <tr className="bg-white">
@@ -10,7 +8,7 @@ const Stats = ({stat}) => {
                 <p className="text-xl font-sans capitalize">{stat.stat.name}</p>
             </td>
             <td className='text-left mx-5 p-2' >
-                {puto > 0 && (<p className={`bg-fondo rounded-md w-[${puto}%]`}>{stat.base_stat}</p>)}
+                <p className='rounded-md text-xl font-bold text-left'>{stat.base_stat}</p>
             </td>
         </tr>
     )

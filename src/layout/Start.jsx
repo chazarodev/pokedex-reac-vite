@@ -32,7 +32,7 @@ const Start = () => {
 
     return (
         <>
-            <div className='mt-5 tablet:p-5 grid tablet:grid-cols-2 gap-10 container mx-auto'>
+            <div className='mt-5 tablet:p-5 grid tablet:grid-cols-2 gap-10 container mx-auto justify-center'>
                 <div>
                     {id > 0 ? (
                         <img 

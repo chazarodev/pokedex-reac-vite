@@ -1,9 +1,28 @@
+import { useState, useEffect } from "react"
 import Stats from "../components/Stats"
 import Types from '../components/Types'
+import Weak from '../components/Weak'
 
 const Info = ({pokemon}) => {
 
+    const [weakness, setWeakness] = useState([]);
     const {id, abilities, name, stats, types} = pokemon
+       
+    useEffect(() => {
+      const getSecondUrl = async () => {
+        try {
+            //Fetch para obtener debilidades
+            const url = types[0].type.url
+            const response = await fetch(url)
+            const result = await response.json()  
+            const weaks = result.damage_relations.double_damage_from
+            setWeakness(weaks);    
+        } catch (error) {
+            console.log(error);
+        }     
+      }
+      getSecondUrl()
+    }, [pokemon]);
 
     return (
         <>
@@ -71,6 +90,11 @@ const Info = ({pokemon}) => {
                         />
                     ))}
                 </div>
+            </section>
+            <section className="my-2">
+                <Weak 
+                    weakness={weakness}
+                />
             </section>
         </>
     )
