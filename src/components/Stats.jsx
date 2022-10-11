@@ -1,14 +1,22 @@
 
-const Stats = ({stat}) => { 
-
+const Stats = ({stat}) => {     
 
     return (
         <tr className="bg-white">
-            <td className=" text-left w-1/2 pl-2">
-                <p className="text-xl font-sans capitalize">{stat.stat.name}</p>
+            <td className=" text-center w-1/2 pl-2">
+                <p className="text-lg font-sans capitalize">{stat.stat.name}</p>
             </td>
-            <td className='text-left mx-5 p-2' >
-                <p className='rounded-md text-xl font-bold text-left'>{stat.base_stat}</p>
+            <td className='text-left mx-1 p-1' >
+                <p 
+                    className='rounded-md text-sm text-center text-white bg-stats'
+                    style={{
+                        opacity: 1,
+                        width: `${stat.base_stat >= 255 ? 200/2 : stat.base_stat / 1.6}%`
+                    }}
+                    onAnimationStart
+                >
+                    {stat.base_stat}%
+                </p>
             </td>
         </tr>
     )

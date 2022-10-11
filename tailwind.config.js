@@ -13,6 +13,7 @@ module.exports = {
       'sombra': '#6A0000',
       'borde': '#facc15',
       'error': '#dc2626',
+      'stats': '#3b74fb'
     },
     fontFamily: {
       sans: ['Rajdhani', 'sans-serif']

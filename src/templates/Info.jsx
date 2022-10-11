@@ -30,13 +30,13 @@ const Info = ({pokemon}) => {
                 <table className="w-full table-auto mx-auto shadow-lg border-none">
                     <thead className="bg-marco text-white">
                         <tr>
-                            <th className="p-2 text-2xl font-sans">
+                            <th className="p-1 text-xl font-sans">
                                 <h1>ID</h1>
                             </th>
-                            <th className="p-2 text-2xl font-sans">
+                            <th className="p-1 text-xl font-sans">
                                 <h1>Name</h1>
                             </th>
-                            <th className="p-2 text-2xl font-sans">
+                            <th className="p-1 text-xl font-sans">
                                 <h1>Abilities</h1>
                             </th>
                         </tr>
@@ -44,14 +44,14 @@ const Info = ({pokemon}) => {
                     <tbody>
                         <tr className="bg-white">
                             <td className="text-center">
-                                <p className="text-xl font-sans">{id}</p>
+                                <p className="text-base font-sans">{id}</p>
                             </td>
                             <td className="text-center">
-                            <p className="text-xl font-sans font-bold capitalize">{name}</p>
+                            <p className="text-base font-sans font-bold capitalize">{name}</p>
                             </td>
                             <td className="text-center">
                                 {abilities.map(abilitie => (
-                                    <p key={abilitie.ability.name} className="text-texto capitalize text-xl">{abilitie.ability.name}</p>
+                                    <p key={abilitie.ability.name} className="text-texto capitalize text-base">{abilitie.ability.name}</p>
                                 ))}
                             </td>
                         </tr>
@@ -62,10 +62,10 @@ const Info = ({pokemon}) => {
                 <table className="w-full mx-auto table-auto shadow-lg bg-white mt-5 laptop:mt-0">
                     <thead className="bg-marco text-left text-white">
                         <tr>
-                            <th className="p-2 text-2xl font-sans mx-5">
+                            <th className="p-2 text-xl font-sans mx-5">
                                 <h1>Stats</h1>
                             </th>
-                            <th className="p-2 text-2xl font-sans mx-5">
+                            <th className="p-2 text-xl font-sans mx-5">
                                 <h1>Level</h1>
                             </th>
                         </tr>

@@ -7,8 +7,8 @@ const Types = ({type}) => {
     return (
         <>
             <div className="mb-2">
-                <div className={`text-center mx-5 p-2 ${name}`}>
-                    <p className="text-2xl font-sans capitalize font-bold">{name}</p>
+                <div className={`text-center mx-5 p-1 ${name}`}>
+                    <p className="text-base font-sans capitalize font-bold">{name}</p>
                 </div>
             </div>
         </>
